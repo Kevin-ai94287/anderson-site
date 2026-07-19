@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>最近动态｜小安老思</title>
+    <meta name="description" content="小安老思海外中文页最近动态：AI 文章、课程活动、企业培训与 OPC 实战记录。" />
+    <link rel="icon" href="/favicon.svg" />
+    <link rel="stylesheet" href="/styles.css?v=20260719u1" />
+    <link rel="canonical" href="https://anderson.ai.aituwei.com/zh/insights/">
+    <link rel="alternate" hreflang="en" href="https://anderson.ai.aituwei.com/insights/">
+    <link rel="alternate" hreflang="zh-CN" href="https://anderson.ai.aituwei.com/zh/insights/">
+    <link rel="alternate" hreflang="x-default" href="https://anderson.ai.aituwei.com/insights/">
+  </head>
+  <body>
+    <main class="lang-zh">
+      <header class="site-header">
+        <a class="brand" href="/zh/" aria-label="小安老思首页">
+          <span class="brand-mark">↗</span>
+          <span>小安老思<small>XIAOAN · AI PRACTITIONER</small></span>
+        </a>
+        <button class="menu-toggle" type="button" aria-label="菜单">菜单</button>
+        <nav>
+          <a href="/zh/#about">关于</a>
+          <a href="/zh/#products">产品</a>
+          <a href="/zh/#updates">动态</a>
+          <a href="/zh/#club">俱乐部</a>
+          <a href="/zh/#works">现场</a>
+          <a href="/zh/#contact">合作</a>
+          <a class="nav-cta" href="/insights/">EN</a>
+        </nav>
+      </header>
+
+      <section class="section updates-page">
+        <div class="section-index">LATEST / UPDATES</div>
+        <div class="updates-page-head">
+          <p class="eyebrow"><i></i>最近动态</p>
+          <h1>小安老思的文章、活动与实践记录</h1>
+          <p>这里是 Anderson 海外站中文页的动态入口。IP智造发布到海外站的中文内容，会优先沉淀到这个栏目中。</p>
+        </div>
+        <div class="updates-grid updates-page-grid">
+          <a class="update-card update-card-featured" href="/zh/">
+            <span>文章入口</span>
+            <h3>AI 时代，如何从工具使用者走向价值创造者？</h3>
+            <p>围绕 AI 认知、超级个体与实际工作流，持续沉淀最新观点和方法。</p>
+          </a>
+          <a class="update-card" href="/zh/">
+            <span>课程动态</span>
+            <h3>AI 公开课、企业内训与 OPC 实战营</h3>
+            <p>课程发布、活动复盘和现场记录会同步整理到这里。</p>
+          </a>
+          <a class="update-card" href="/zh/">
+            <span>案例观察</span>
+            <h3>智能体落地、组织提效与个人品牌增长</h3>
+            <p>把实际案例、行业观察和方法论内容集中展示，便于持续访问。</p>
+          </a>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-brand">小安老思<span>用AI突围，成为价值创造者。</span></div>
+        <div class="footer-links"><a href="/zh/">首页</a><a href="/zh/#products">产品</a><a href="/zh/#contact">合作</a><a href="/insights/">EN</a></div>
+        <p>© 2026 XIAOAN LAOSI. ALL RIGHTS RESERVED.</p>
+      </footer>
+    </main>
+    <script>
+      const toggle = document.querySelector(".menu-toggle");
+      const nav = document.querySelector(".site-header nav");
+      toggle?.addEventListener("click", () => {
+        nav?.classList.toggle("nav-open");
+        toggle.textContent = nav?.classList.contains("nav-open") ? "×" : "菜单";
+      });
+      nav?.querySelectorAll("a").forEach((link) => link.addEventListener("click", () => nav.classList.remove("nav-open")));
+    </script>
+  </body>
+</html>
