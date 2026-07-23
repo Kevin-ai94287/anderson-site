@@ -10,40 +10,44 @@
 <link rel="stylesheet" href="/css/style.css">
 <link rel="canonical" href="https://anderson.ai.aituwei.com/zh/events/">
 <style>
-html { color-scheme: light !important; background: #f4f5f2 !important; }
-body.ipz-listing-page { margin: 0 !important; background: #f4f5f2 !important; color: #17201e !important;
+html { color-scheme: dark !important; background: #0a0a0c !important; }
+body.ipz-listing-page { margin: 0 !important; background: #0a0a0c !important; color: #f4f4f2 !important;
   font-family: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif !important;
   letter-spacing: 0 !important; -webkit-font-smoothing: antialiased; }
 .ipz-listing-page * { box-sizing: border-box; }
 .ipz-list-header { width: min(1120px, calc(100% - 48px)); height: 68px; margin: 0 auto;
   display: flex !important; align-items: center; justify-content: space-between; gap: 24px;
-  border-bottom: 1px solid #d7ddda; }
-.ipz-list-brand { color: #101614 !important; text-decoration: none !important; font-size: 22px !important;
+  border-bottom: 1px solid #29292d; }
+.ipz-list-brand { color: #f7f7f5 !important; text-decoration: none !important; font-size: 22px !important;
   line-height: 1 !important; font-weight: 850 !important; letter-spacing: 0 !important; }
 .ipz-list-nav { display: flex !important; align-items: center; gap: 22px; white-space: nowrap; }
-.ipz-list-nav a { color: #52605c !important; text-decoration: none !important; font-size: 14px !important;
+.ipz-list-nav a { color: #aaa9ad !important; text-decoration: none !important; font-size: 14px !important;
   line-height: 1.2 !important; letter-spacing: 0 !important; }
-.ipz-list-nav .nav-cta { color: #087f6c !important; padding-left: 18px; border-left: 1px solid #d7ddda; }
+.ipz-list-nav .nav-cta { color: #ff684d !important; padding-left: 18px; border-left: 1px solid #303034; }
 .ipz-list-main { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 64px 0 90px; }
-.ipz-list-eyebrow { margin: 0 0 18px !important; color: #087f6c !important; font-size: 13px !important;
+.ipz-list-eyebrow { margin: 0 0 18px !important; color: #ff684d !important; font-size: 13px !important;
   line-height: 1.4 !important; font-weight: 800 !important; letter-spacing: .08em !important; text-transform: uppercase; }
 .ipz-list-head { max-width: 780px; margin-bottom: 48px; }
-.ipz-list-head h1 { margin: 0 0 20px !important; color: #101614 !important; font-size: clamp(42px, 6vw, 72px) !important;
+.ipz-list-head h1 { margin: 0 0 20px !important; color: #f7f7f5 !important; font-size: 64px !important;
   line-height: 1.08 !important; font-weight: 850 !important; letter-spacing: 0 !important; }
-.ipz-list-head > p:last-child { margin: 0 !important; color: #52605c !important; font-size: 18px !important;
+.ipz-list-head > p:last-child { margin: 0 !important; color: #aaa9ad !important; font-size: 18px !important;
   line-height: 1.75 !important; letter-spacing: 0 !important; }
 .ipz-list-grid { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px;
-  background: #cfd6d2; border-top: 1px solid #cfd6d2; border-bottom: 1px solid #cfd6d2; }
-.ipz-list-card { display: block !important; min-width: 0; padding: 30px !important; background: #f4f5f2 !important;
-  color: #17201e !important; text-decoration: none !important; }
-.ipz-list-card:hover { background: #e8efeb !important; }
-.ipz-list-card span { display: block; margin-bottom: 14px; color: #087f6c !important; font-size: 12px !important;
+  background: #29292d; border-top: 1px solid #29292d; border-bottom: 1px solid #29292d; }
+.ipz-list-card { display: grid !important; grid-template-columns:140px minmax(0,1fr); gap:22px; min-width: 0; padding: 24px !important; background: #0a0a0c !important;
+  color: #f4f4f2 !important; text-decoration: none !important; }
+.ipz-list-card:hover { background: #141416 !important; }
+.ipz-list-copy { display:block; min-width:0; }
+.ipz-list-media { display:block; width:100%; aspect-ratio:4/3; overflow:hidden; background:#171719; }
+.ipz-list-media img { display:block; width:100%; height:100%; object-fit:cover; }
+.ipz-list-media-empty { background:linear-gradient(135deg,#171719,#242426); }
+.ipz-list-card time { display: block; margin-bottom: 14px; color: #ff684d !important; font-size: 12px !important;
   line-height: 1.4 !important; font-weight: 750 !important; letter-spacing: .05em !important; }
-.ipz-list-card h3 { margin: 0 0 14px !important; color: #101614 !important; font-size: 25px !important;
+.ipz-list-card h3 { margin: 0 0 14px !important; color: #f7f7f5 !important; font-size: 25px !important;
   line-height: 1.35 !important; font-weight: 800 !important; letter-spacing: 0 !important; }
-.ipz-list-card p { margin: 0 !important; color: #52605c !important; font-size: 15px !important;
+.ipz-list-card p { margin: 0 !important; color: #aaa9ad !important; font-size: 15px !important;
   line-height: 1.75 !important; letter-spacing: 0 !important; }
-.ipz-list-card:first-child { grid-column: 1 / -1; padding: 40px 30px !important; }
+.ipz-list-card:first-child { grid-column: 1 / -1; grid-template-columns:minmax(240px,38%) minmax(0,1fr); padding: 30px !important; }
 .ipz-list-card:first-child h3 { max-width: 850px; font-size: 34px !important; }
 @media (max-width: 760px) {
   .ipz-list-header { width: calc(100% - 36px); height: 58px; }
@@ -55,7 +59,7 @@ body.ipz-listing-page { margin: 0 !important; background: #f4f5f2 !important; co
   .ipz-list-head h1 { font-size: 38px !important; line-height: 1.14 !important; }
   .ipz-list-head > p:last-child { font-size: 16px !important; }
   .ipz-list-grid { grid-template-columns: 1fr; }
-  .ipz-list-card, .ipz-list-card:first-child { grid-column: auto; padding: 24px 0 !important; }
+  .ipz-list-card, .ipz-list-card:first-child { grid-column: auto; grid-template-columns:112px minmax(0,1fr); gap:16px; padding: 20px 0 !important; }
   .ipz-list-card h3, .ipz-list-card:first-child h3 { font-size: 24px !important; }
 }
 </style>
@@ -73,10 +77,10 @@ body.ipz-listing-page { margin: 0 !important; background: #f4f5f2 !important; co
       <p>这里汇总 IP智造发布到官网的最新文章、活动与实践记录。</p>
     </div>
     <div class="ipz-list-grid">
-      <a class="ipz-list-card" href="/zh/events/20260722-waic2026-kan-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi/"><span>2026-07-22</span><h3>WAIC2026看完！今年AI的3个真实趋势</h3><p>逛完2026世界人工智能大会，小安老思发现AI彻底告别概念内卷，全面进入落地兑现时代。三大关键词：场景化、具身化、应用化。</p></a>
-<a class="ipz-list-card" href="/zh/events/20260722-waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d/"><span>2026-07-22</span><h3>WAIC2026逛完！今年AI的3个真实趋势，彻底告别概念内卷</h3><p>小安老思逛完2026世界人工智能大会，总结出AI三大趋势：场景化、具身化、应用化，AI全面进入落地兑现时代。</p></a>
-<a class="ipz-list-card" href="/zh/events/20260721-waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d/"><span>2026-07-21</span><h3>WAIC2026逛完！今年AI的3个真实趋势，彻底告别概念内卷</h3><p>小安老思逛完2026世界人工智能大会，总结出AI三大趋势：场景化、具身化、应用化，AI全面进入落地兑现时代。</p></a>
-<a class="ipz-list-card" href="/zh/events/20260718-ai-tu-wei-ju-le-bu-zai-xi-shan-opc-qing-chuang-kong-jian-lu/"><span>2026-07-18</span><h3>AI突围俱乐部在西山OPC青创空间路演：从0到1的AI创业故事</h3><p>7月16日，小安老思带领AI突围俱乐部在西山OPC青创空间启用仪式上汇报项目，展现AI创业者的实践与愿景。</p></a>
+      <a class="ipz-list-card" href="/zh/events/20260722-waic2026-kan-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi/"><span class="ipz-list-media"><img src="/media/waic2026-kan-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi/90cddb7051c24782aba4f5fc7fcd6441.jpg" alt="WAIC2026看完！今年AI的3个真实趋势" loading="lazy"></span><span class="ipz-list-copy"><time>2026-07-22</time><h3>WAIC2026看完！今年AI的3个真实趋势</h3><p>逛完2026世界人工智能大会，小安老思发现AI彻底告别概念内卷，全面进入落地兑现时代。三大关键词：场景化、具身化、应用化。</p></span></a>
+<a class="ipz-list-card" href="/zh/events/20260722-waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d/"><span class="ipz-list-media"><img src="/media/waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d/e32776111c734681985c3180bfa7c141.jpg" alt="WAIC2026逛完！今年AI的3个真实趋势，彻底告别概念内卷" loading="lazy"></span><span class="ipz-list-copy"><time>2026-07-22</time><h3>WAIC2026逛完！今年AI的3个真实趋势，彻底告别概念内卷</h3><p>小安老思逛完2026世界人工智能大会，总结出AI三大趋势：场景化、具身化、应用化，AI全面进入落地兑现时代。</p></span></a>
+<a class="ipz-list-card" href="/zh/events/20260721-waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d/"><span class="ipz-list-media"><img src="/media/waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d/e32776111c734681985c3180bfa7c141.jpg" alt="WAIC2026逛完！今年AI的3个真实趋势，彻底告别概念内卷" loading="lazy"></span><span class="ipz-list-copy"><time>2026-07-21</time><h3>WAIC2026逛完！今年AI的3个真实趋势，彻底告别概念内卷</h3><p>小安老思逛完2026世界人工智能大会，总结出AI三大趋势：场景化、具身化、应用化，AI全面进入落地兑现时代。</p></span></a>
+<a class="ipz-list-card" href="/zh/events/20260718-ai-tu-wei-ju-le-bu-zai-xi-shan-opc-qing-chuang-kong-jian-lu/"><span class="ipz-list-media"><img src="/media/ai-tu-wei-ju-le-bu-zai-xi-shan-opc-qing-chuang-kong-jian-lu/5425be9ceac940daa280db392ba754c7.jpg" alt="AI突围俱乐部在西山OPC青创空间路演：从0到1的AI创业故事" loading="lazy"></span><span class="ipz-list-copy"><time>2026-07-18</time><h3>AI突围俱乐部在西山OPC青创空间路演：从0到1的AI创业故事</h3><p>7月16日，小安老思带领AI突围俱乐部在西山OPC青创空间启用仪式上汇报项目，展现AI创业者的实践与愿景。</p></span></a>
     </div>
   </section>
 </main>
