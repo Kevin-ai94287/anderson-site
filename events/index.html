@@ -9,25 +9,74 @@
 <link rel="stylesheet" href="/styles.css">
 <link rel="stylesheet" href="/css/style.css">
 <link rel="canonical" href="https://anderson.ai.aituwei.com/events/">
+<style>
+html { color-scheme: light !important; background: #f4f5f2 !important; }
+body.ipz-listing-page { margin: 0 !important; background: #f4f5f2 !important; color: #17201e !important;
+  font-family: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif !important;
+  letter-spacing: 0 !important; -webkit-font-smoothing: antialiased; }
+.ipz-listing-page * { box-sizing: border-box; }
+.ipz-list-header { width: min(1120px, calc(100% - 48px)); height: 68px; margin: 0 auto;
+  display: flex !important; align-items: center; justify-content: space-between; gap: 24px;
+  border-bottom: 1px solid #d7ddda; }
+.ipz-list-brand { color: #101614 !important; text-decoration: none !important; font-size: 22px !important;
+  line-height: 1 !important; font-weight: 850 !important; letter-spacing: 0 !important; }
+.ipz-list-nav { display: flex !important; align-items: center; gap: 22px; white-space: nowrap; }
+.ipz-list-nav a { color: #52605c !important; text-decoration: none !important; font-size: 14px !important;
+  line-height: 1.2 !important; letter-spacing: 0 !important; }
+.ipz-list-nav .nav-cta { color: #087f6c !important; padding-left: 18px; border-left: 1px solid #d7ddda; }
+.ipz-list-main { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 64px 0 90px; }
+.ipz-list-eyebrow { margin: 0 0 18px !important; color: #087f6c !important; font-size: 13px !important;
+  line-height: 1.4 !important; font-weight: 800 !important; letter-spacing: .08em !important; text-transform: uppercase; }
+.ipz-list-head { max-width: 780px; margin-bottom: 48px; }
+.ipz-list-head h1 { margin: 0 0 20px !important; color: #101614 !important; font-size: clamp(42px, 6vw, 72px) !important;
+  line-height: 1.08 !important; font-weight: 850 !important; letter-spacing: 0 !important; }
+.ipz-list-head > p:last-child { margin: 0 !important; color: #52605c !important; font-size: 18px !important;
+  line-height: 1.75 !important; letter-spacing: 0 !important; }
+.ipz-list-grid { display: grid !important; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px;
+  background: #cfd6d2; border-top: 1px solid #cfd6d2; border-bottom: 1px solid #cfd6d2; }
+.ipz-list-card { display: block !important; min-width: 0; padding: 30px !important; background: #f4f5f2 !important;
+  color: #17201e !important; text-decoration: none !important; }
+.ipz-list-card:hover { background: #e8efeb !important; }
+.ipz-list-card span { display: block; margin-bottom: 14px; color: #087f6c !important; font-size: 12px !important;
+  line-height: 1.4 !important; font-weight: 750 !important; letter-spacing: .05em !important; }
+.ipz-list-card h3 { margin: 0 0 14px !important; color: #101614 !important; font-size: 25px !important;
+  line-height: 1.35 !important; font-weight: 800 !important; letter-spacing: 0 !important; }
+.ipz-list-card p { margin: 0 !important; color: #52605c !important; font-size: 15px !important;
+  line-height: 1.75 !important; letter-spacing: 0 !important; }
+.ipz-list-card:first-child { grid-column: 1 / -1; padding: 40px 30px !important; }
+.ipz-list-card:first-child h3 { max-width: 850px; font-size: 34px !important; }
+@media (max-width: 760px) {
+  .ipz-list-header { width: calc(100% - 36px); height: 58px; }
+  .ipz-list-brand { font-size: 20px !important; }
+  .ipz-list-nav a:not(.nav-cta) { display: none !important; }
+  .ipz-list-nav .nav-cta { padding-left: 0; border-left: 0; font-size: 13px !important; }
+  .ipz-list-main { width: calc(100% - 36px); padding: 42px 0 60px; }
+  .ipz-list-head { margin-bottom: 34px; }
+  .ipz-list-head h1 { font-size: 38px !important; line-height: 1.14 !important; }
+  .ipz-list-head > p:last-child { font-size: 16px !important; }
+  .ipz-list-grid { grid-template-columns: 1fr; }
+  .ipz-list-card, .ipz-list-card:first-child { grid-column: auto; padding: 24px 0 !important; }
+  .ipz-list-card h3, .ipz-list-card:first-child h3 { font-size: 24px !important; }
+}
+</style>
 </head>
-<body>
-<main class="lang-en">
-  <header class="site-header">
-    <a class="brand" href="/"><span class="brand-mark">↗</span><span>Anderson</span></a>
-    <nav><a href="/#about">About</a><a href="/#products">Programs</a><a href="/#updates">Updates</a><a href="/#club">Club</a><a href="/#works">Stage</a><a href="/#contact">Work Together</a><a class="nav-cta" href="/zh/insights/">中文</a></nav>
+<body class="ipz-listing-page">
+<header class="ipz-list-header">
+    <a class="ipz-list-brand" href="/">Anderson</a>
+    <nav class="ipz-list-nav"><a href="/#about">About</a><a href="/#products">Programs</a><a href="/#updates">Updates</a><a href="/#club">Club</a><a href="/#works">Stage</a><a href="/#contact">Work Together</a><a class="nav-cta" href="/zh/events/">中文</a></nav>
   </header>
-  <section class="section updates-page">
-    <div class="section-index">LATEST / UPDATES</div>
-    <div class="updates-page-head">
-      <p class="eyebrow"><i></i>Latest Updates</p>
+<main class="ipz-list-main">
+  <section>
+    <div class="ipz-list-head">
+      <p class="ipz-list-eyebrow">LATEST / UPDATES</p>
       <h1>Latest Articles and Events</h1>
       <p>Latest articles, events, and practice notes published through IP Zhizao.</p>
     </div>
-    <div class="updates-grid updates-page-grid">
-      <a class="update-card update-card-featured" href="/events/20260722-waic2026-kan-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi/"><span>2026-07-22</span><h3>WAIC2026: 3 Real AI Trends This Year</h3><p>After visiting the 2026 World Artificial Intelligence Conference, Xiao An Lao Si found that AI has completely moved beyond conceptual hype and entered an era of practical implementation. Three key words: scenario-specific, embodied, and application-oriented.</p></a>
-<a class="update-card" href="/events/20260722-waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d/"><span>2026-07-22</span><h3>After WAIC2026! 3 Real AI Trends, Saying Goodbye to Concept Inflation</h3><p>After visiting WAIC2026, Xiao An Lao Si summarizes three major AI trends: scenario-specific, embodied, and application-oriented. AI has fully entered an era of practical implementation.</p></a>
-<a class="update-card" href="/events/20260721-waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d/"><span>2026-07-21</span><h3>After WAIC2026! 3 Real AI Trends, Saying Goodbye to Concept Inflation</h3><p>After visiting WAIC2026, Xiao An Lao Si summarizes three major AI trends: scenario-specific, embodied, and application-oriented. AI has fully entered an era of practical implementation.</p></a>
-<a class="update-card" href="/events/20260718-ai-tu-wei-ju-le-bu-zai-xi-shan-opc-qing-chuang-kong-jian-lu/"><span>2026-07-18</span><h3>AI Breakthrough Club Roadshow at Xishan OPC Youth Innovation Space: An AI Entrepreneurship Story from 0 to 1</h3><p>On July 16, Xiao An Lao Si led the AI Breakthrough Club to present their project at the inauguration ceremony of the Xishan OPC Youth Innovation Space, showcasing the practice and vision of AI entrepreneurs.</p></a>
+    <div class="ipz-list-grid">
+      <a class="ipz-list-card" href="/events/20260722-waic2026-kan-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi/"><span>2026-07-22</span><h3>WAIC2026: 3 Real AI Trends This Year</h3><p>After visiting the 2026 World Artificial Intelligence Conference, Xiao An Lao Si found that AI has completely moved beyond conceptual hype and entered an era of practical implementation. Three key words: scenario-specific, embodied, and application-oriented.</p></a>
+<a class="ipz-list-card" href="/events/20260722-waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d/"><span>2026-07-22</span><h3>After WAIC2026! 3 Real AI Trends, Saying Goodbye to Concept Inflation</h3><p>After visiting WAIC2026, Xiao An Lao Si summarizes three major AI trends: scenario-specific, embodied, and application-oriented. AI has fully entered an era of practical implementation.</p></a>
+<a class="ipz-list-card" href="/events/20260721-waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d/"><span>2026-07-21</span><h3>After WAIC2026! 3 Real AI Trends, Saying Goodbye to Concept Inflation</h3><p>After visiting WAIC2026, Xiao An Lao Si summarizes three major AI trends: scenario-specific, embodied, and application-oriented. AI has fully entered an era of practical implementation.</p></a>
+<a class="ipz-list-card" href="/events/20260718-ai-tu-wei-ju-le-bu-zai-xi-shan-opc-qing-chuang-kong-jian-lu/"><span>2026-07-18</span><h3>AI Breakthrough Club Roadshow at Xishan OPC Youth Innovation Space: An AI Entrepreneurship Story from 0 to 1</h3><p>On July 16, Xiao An Lao Si led the AI Breakthrough Club to present their project at the inauguration ceremony of the Xishan OPC Youth Innovation Space, showcasing the practice and vision of AI entrepreneurs.</p></a>
     </div>
   </section>
 </main>
