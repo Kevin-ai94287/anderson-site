@@ -3,6 +3,8 @@ title: "After WAIC2026! 3 Real AI Trends, Saying Goodbye to Concept Inflation"
 date: 2026-07-22
 key: waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d
 summary: "After visiting WAIC2026, Xiao An Lao Si summarizes three major AI trends: scenario-specific, embodied, and application-oriented. AI has fully entered an era of practical implementation."
+event_id: 20
+cover_fingerprint: 36da80d7772bc4e5043cb8b7913df80f55bbe44461dcee1074e24f858b142927
 ---
 ## After WAIC2026! 3 Real AI Trends
 
