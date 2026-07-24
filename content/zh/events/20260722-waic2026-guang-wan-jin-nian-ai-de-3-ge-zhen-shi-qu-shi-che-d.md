@@ -1,6 +1,6 @@
 ---
 title: "WAIC2026逛完！今年AI的3个真实趋势，彻底告别概念内卷"
-date: 2026-07-22
+date: 2026-07-19
 key: waic2026-guang-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi-che-d
 summary: "小安老思逛完2026世界人工智能大会，总结出AI三大趋势：场景化、具身化、应用化，AI全面进入落地兑现时代。"
 event_id: 20
