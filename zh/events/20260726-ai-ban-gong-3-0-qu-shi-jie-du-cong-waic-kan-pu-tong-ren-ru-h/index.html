@@ -1,0 +1,125 @@
+<!doctype html>
+<!-- ipzhizao-article-v4 ipzhizao-images-eager -->
+<html lang="zh">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI办公3.0趋势解读：从WAIC看普通人如何低成本创业</title>
+<meta name="description" content="小安老思在西山自见山OPC社区分享WAIC2026一手观察，解读场景化、具身化、应用化三大趋势，拆解普通人低成本AI创业打法。">
+<link rel="stylesheet" href="/styles.css">
+<link rel="stylesheet" href="/css/style.css">
+<link rel="canonical" href="https://anderson.ai.aituwei.com/zh/events/20260726-ai-ban-gong-3-0-qu-shi-jie-du-cong-waic-kan-pu-tong-ren-ru-h/">
+<style>
+html { color-scheme: dark !important; background: #0a0a0c !important; }
+body.ipz-article-page { margin: 0 !important; background: #0a0a0c !important; color: #f4f4f2 !important;
+  font-family: Inter, "Noto Sans SC", "PingFang SC", "Microsoft YaHei", Arial, sans-serif !important;
+  letter-spacing: 0 !important; -webkit-font-smoothing: antialiased; }
+.ipz-article-page * { box-sizing: border-box; }
+.ipz-header { position: sticky; top: 0; z-index: 20; width: 100%; background: rgba(10,10,12,.94) !important;
+  border-bottom: 1px solid #29292d; backdrop-filter: blur(12px); }
+.ipz-header-inner { width: min(1120px, calc(100% - 48px)); height: 68px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between; gap: 24px; }
+.ipz-brand { color: #f7f7f5 !important; text-decoration: none !important; font-size: 22px !important;
+  line-height: 1 !important; font-weight: 800 !important; letter-spacing: 0 !important; }
+.ipz-nav { display: flex; align-items: center; gap: 22px; white-space: nowrap; }
+.ipz-nav a { color: #aaa9ad !important; text-decoration: none !important; font-size: 14px !important;
+  line-height: 1.2 !important; letter-spacing: 0 !important; }
+.ipz-nav a:hover { color: #ff684d !important; }
+.ipz-nav .lang-switch { padding-left: 18px; border-left: 1px solid #303034; color: #ff684d !important; }
+.ipz-main { width: min(1120px, calc(100% - 48px)); margin: 0 auto; padding: 34px 0 88px; }
+.ipz-back { display: inline-flex; align-items: center; min-height: 36px; color: #aaa9ad !important;
+  text-decoration: none !important; font-size: 14px !important; letter-spacing: 0 !important; }
+.ipz-back:hover { color: #ff684d !important; }
+.ipz-article { width: min(820px, 100%); margin: 36px auto 0; }
+.ipz-kicker { display: flex; align-items: center; gap: 10px; margin: 0 0 20px !important; color: #ff684d !important;
+  font-size: 13px !important; line-height: 1.4 !important; font-weight: 750 !important; letter-spacing: .08em !important;
+  text-transform: uppercase; }
+.ipz-kicker::before { content: ""; width: 30px; height: 3px; background: #e44d3a; }
+.ipz-article h1 { margin: 0 !important; color: #f7f7f5 !important; font-size: 60px !important;
+  line-height: 1.08 !important; font-weight: 850 !important; letter-spacing: 0 !important; text-wrap: balance; }
+.ipz-deck { margin: 28px 0 36px !important; padding: 0 0 0 22px; border-left: 4px solid #ff684d;
+  color: #b8b7ba !important; font-size: 21px !important; line-height: 1.75 !important; letter-spacing: 0 !important; }
+.ipz-rule { height: 1px; margin: 0 0 42px; background: #303034; border: 0; }
+.ipz-content { color: #d6d5d7 !important; font-size: 18px !important; line-height: 1.9 !important; letter-spacing: 0 !important; }
+.ipz-content p { margin: 0 0 26px !important; color: #d6d5d7 !important; font: inherit !important;
+  line-height: 1.9 !important; letter-spacing: 0 !important; }
+.ipz-content h2, .ipz-content h3, .ipz-content h4 { color: #f7f7f5 !important; letter-spacing: 0 !important;
+  font-weight: 800 !important; text-wrap: balance; }
+.ipz-content h2 { margin: 64px 0 22px !important; padding-top: 18px; border-top: 3px solid #f7f7f5;
+  font-size: 32px !important; line-height: 1.3 !important; }
+.ipz-content h3 { margin: 48px 0 18px !important; font-size: 25px !important; line-height: 1.4 !important; }
+.ipz-content h4 { margin: 36px 0 16px !important; font-size: 21px !important; line-height: 1.45 !important; }
+.ipz-content strong { color: #f7f7f5 !important; font-weight: 800 !important; }
+.ipz-content a { color: #ff8068 !important; text-underline-offset: 4px; }
+.ipz-content ul, .ipz-content ol { margin: 8px 0 30px !important; padding-left: 1.45em !important; }
+.ipz-content li { margin: 10px 0 !important; padding-left: .25em; color: #d6d5d7 !important; line-height: 1.8 !important; }
+.ipz-content blockquote { margin: 34px 0 !important; padding: 24px 28px; background: #171719 !important;
+  border-left: 4px solid #ff684d; color: #e4e3e5 !important; font-size: 20px !important; line-height: 1.75 !important; }
+.ipz-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px;
+  margin: 36px calc(50% - 50vw) 42px; padding: 0 max(24px, calc((100vw - 1120px) / 2)); }
+.ipz-gallery-single { display: block; margin-left: -70px; margin-right: -70px; padding: 0; }
+.ipz-gallery figure { min-width: 0; margin: 0 !important; overflow: hidden; background: #171719 !important; }
+.ipz-gallery img { display: block; width: 100% !important; height: 100% !important; min-height: 300px;
+  max-height: 640px; object-fit: cover; border: 0 !important; border-radius: 0 !important; }
+.ipz-gallery-single img { width: 100% !important; height: auto !important; min-height: 0; max-height: 680px; object-fit: contain; }
+.ipz-gallery figcaption { padding: 10px 2px 0; background: #0a0a0c; color: #8f8f93 !important;
+  font-size: 12px !important; line-height: 1.5 !important; letter-spacing: 0 !important; }
+.ipz-footer-note { margin: 70px 0 0; padding-top: 22px; border-top: 1px solid #303034;
+  color: #8f8f93 !important; font-size: 13px !important; line-height: 1.6 !important; }
+@media (max-width: 760px) {
+  .ipz-header-inner { width: calc(100% - 36px); height: 58px; }
+  .ipz-brand { font-size: 20px !important; }
+  .ipz-nav a:not(.lang-switch) { display: none; }
+  .ipz-nav .lang-switch { padding-left: 0; border-left: 0; font-size: 13px !important; }
+  .ipz-main { width: calc(100% - 36px); padding: 18px 0 56px; }
+  .ipz-article { margin-top: 24px; }
+  .ipz-kicker { margin-bottom: 16px !important; font-size: 12px !important; }
+  .ipz-article h1 { font-size: 36px !important; line-height: 1.16 !important; }
+  .ipz-deck { margin: 22px 0 30px !important; padding-left: 16px; font-size: 17px !important; line-height: 1.75 !important; }
+  .ipz-rule { margin-bottom: 32px; }
+  .ipz-content { font-size: 17px !important; line-height: 1.85 !important; }
+  .ipz-content p { margin-bottom: 23px !important; line-height: 1.85 !important; }
+  .ipz-content h2 { margin-top: 48px !important; font-size: 26px !important; }
+  .ipz-content h3 { margin-top: 38px !important; font-size: 22px !important; }
+  .ipz-content blockquote { margin: 28px 0 !important; padding: 20px; font-size: 18px !important; }
+  .ipz-gallery, .ipz-gallery-single { grid-template-columns: 1fr; margin: 28px -18px 34px; padding: 0; gap: 10px; }
+  .ipz-gallery img { height: auto !important; min-height: 0; max-height: none; object-fit: contain; }
+  .ipz-gallery figcaption { padding: 8px 18px 0; }
+}
+</style>
+</head>
+<body class="ipz-article-page">
+<header class="ipz-header">
+  <div class="ipz-header-inner">
+    <a href="/zh/" class="ipz-brand">Anderson</a>
+    <nav class="ipz-nav"><a href="/zh/">首页</a><a href="/zh/about/">关于</a><a href="/zh/services/">课程</a><a href="/zh/works/">作品成果</a><a href="/zh/insights/">洞察</a><a href="/zh/events/">动态</a><a href="/zh/contact/">联系</a><a href="/events/20260726-ai-ban-gong-3-0-qu-shi-jie-du-cong-waic-kan-pu-tong-ren-ru-h/" class="lang-switch">EN</a></nav>
+  </div>
+</header>
+<main class="ipz-main">
+  <a href="/zh/events/" class="ipz-back">← 返回动态</a>
+  <article class="ipz-article">
+    <p class="ipz-kicker">观点与动态 · 深度阅读</p>
+    <h1>AI办公3.0趋势解读：从WAIC看普通人如何低成本创业</h1>
+    <p class="ipz-deck">小安老思在西山自见山OPC社区分享WAIC2026一手观察，解读场景化、具身化、应用化三大趋势，拆解普通人低成本AI创业打法。</p>
+    <div class="ipz-rule"></div>
+    <div class="ipz-content"><h2>AI办公3.0：从WAIC看行业趋势</h2>
+<p>最近，小安老思在西山自见山OPC社区举办了一场AI办公3.0公开课，同时带来了WAIC2026世界人工智能大会的一手观察。这场活动面向对AI应用感兴趣的普通人，重点分享了大会议展中蕴含的创业机会。</p>
+<div class="ipz-gallery"><figure><img src="/media/ai-ban-gong-3-0-qu-shi-jie-du-cong-waic-kan-pu-tong-ren-ru-h/96e422a624194c6794f2bfcfd974da72.jpg" alt="文章配图 1" loading="eager" decoding="async"><figcaption>文章配图 1</figcaption></figure><figure><img src="/media/ai-ban-gong-3-0-qu-shi-jie-du-cong-waic-kan-pu-tong-ren-ru-h/48f8e8d96cb1411a826c7b892ae9a2d3.jpg" alt="文章配图 6" loading="eager" decoding="async"><figcaption>文章配图 6</figcaption></figure></div>
+<h2>三大趋势解读</h2>
+<p>小安老思实地走访了大会的小微初创展台，总结出三大趋势：</p>
+<ul><li><strong>场景化</strong>：AI不再泛泛而谈，而是深入具体办公场景；</li><li><strong>具身化</strong>：实体机器人产品增多，交互方式更直观；</li><li><strong>应用化</strong>：降低使用门槛，让普通人也能快速上手。</li></ul>
+<div class="ipz-gallery ipz-gallery-single"><figure><img src="/media/ai-ban-gong-3-0-qu-shi-jie-du-cong-waic-kan-pu-tong-ren-ru-h/41c60f1ad0c8457294aee5ebe4c2501e.jpg" alt="文章配图 2" loading="eager" decoding="async"><figcaption>文章配图 2</figcaption></figure></div>
+<h2>低成本创业路径</h2>
+<p>小安老思拆解了普通人如何依托自身能力打造一人公司。关键步骤：</p>
+<ol><li>识别个人可提供的价值（如写作、设计、咨询）；</li><li>用AI工具将服务产品化；</li><li>通过小规模测试验证需求。</li></ol>
+<div class="ipz-gallery ipz-gallery-single"><figure><img src="/media/ai-ban-gong-3-0-qu-shi-jie-du-cong-waic-kan-pu-tong-ren-ru-h/d3edcaaa8015477a9283ebc45da4cdf8.jpg" alt="文章配图 3" loading="eager" decoding="async"><figcaption>文章配图 3</figcaption></figure></div>
+<p>活动现场，小安老思演示了AI工具如何辅助完成一份市场分析报告，全程不到10分钟，让参与者直观感受到效率提升。</p>
+<div class="ipz-gallery ipz-gallery-single"><figure><img src="/media/ai-ban-gong-3-0-qu-shi-jie-du-cong-waic-kan-pu-tong-ren-ru-h/aff539b868bc401093e5064b39f444fd.jpg" alt="文章配图 4" loading="eager" decoding="async"><figcaption>文章配图 4</figcaption></figure></div>
+<h2>总结</h2>
+<p>AI创业并非遥不可及，抓住场景化趋势，发挥个人特长，就能在AI浪潮中找到属于自己的位置。希望本文对你有所启发。</p>
+<div class="ipz-gallery ipz-gallery-single"><figure><img src="/media/ai-ban-gong-3-0-qu-shi-jie-du-cong-waic-kan-pu-tong-ren-ru-h/eedf33d5da05451bae1763b90920d12f.jpg" alt="文章配图 5" loading="eager" decoding="async"><figcaption>文章配图 5</figcaption></figure></div></div>
+    <p class="ipz-footer-note">Anderson · AI办公3.0趋势解读：从WAIC看普通人如何低成本创业</p>
+  </article>
+</main>
+</body>
+</html>
