@@ -1,6 +1,6 @@
 ---
 title: "WAIC2026: 3 Real AI Trends This Year"
-date: 2026-07-22
+date: 2026-07-19
 key: waic2026-kan-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi
 summary: "After visiting the 2026 World Artificial Intelligence Conference, Xiao An Lao Si found that AI has completely moved beyond conceptual hype and entered an era of practical implementation. Three key words: scenario-specific, embodied, and application-oriented."
 ---
