@@ -1,6 +1,6 @@
 ---
 title: "WAIC2026看完！今年AI的3个真实趋势"
-date: 2026-07-22
+date: 2026-07-19
 key: waic2026-kan-wan-jin-nian-ai-de-3-ge-zhen-shi-qu-shi
 summary: "逛完2026世界人工智能大会，小安老思发现AI彻底告别概念内卷，全面进入落地兑现时代。三大关键词：场景化、具身化、应用化。"
 ---
