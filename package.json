@@ -1,0 +1,9 @@
+{
+  "name": "anderson-site",
+  "private": true,
+  "scripts": {
+    "build": "node scripts/prepare-site.js",
+    "test": "node scripts/test-date-policy.js",
+    "audit:seo": "node scripts/audit-seo.js"
+  }
+}
